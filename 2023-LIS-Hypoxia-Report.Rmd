@@ -482,7 +482,7 @@ ERDDAP](http://merlin.dms.uconn.edu:8080/erddap/tabledap/DEEP_WQ.html) and selec
 samples are collected and analyzed under [EPA-approved Quality Assurance Project
 Plans](https://portal.ct.gov/DEEP/Water/LIS-Monitoring/LIS-Quality-Assurance-Project-Plans).
 
-Data from IEC cruises can be downloaded through the water quality portal (Link coming soon). All IEC samples are collected and analyzed under [EPA-approved Quality Assurance Plans](https://www.iec-nynjct.org/sites/default/files/iec-ambient-monitoring-in-wlis-qapp-version-5.0-final.pdf). 
+Data from IEC cruises can be downloaded through the [Water Quality Portal](https://www.waterqualitydata.us/). All IEC samples are collected and analyzed under [EPA-approved Quality Assurance Plans](https://www.iec-nynjct.org/sites/default/files/iec-ambient-monitoring-in-wlis-qapp-version-5.0-final.pdf). 
 
 *In addition click the buttons below to download data utilized in the visualizations produced for the 2023 Hypoxia Season Summary.* 
 
