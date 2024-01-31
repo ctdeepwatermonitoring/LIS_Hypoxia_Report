@@ -478,7 +478,7 @@ plotly:: ggplotly(percent_plot, tooltip = c("label1", "label2"))
 <hr>
 
 Data from all CT DEEP cruises can be downloaded from the [UCONN
-ERDDAP](http://merlin.dms.uconn.edu:8080/erddap/tabledap/DEEP_WQ.html) and through the Water Quality Portal (Link to come soon). All
+ERDDAP](http://merlin.dms.uconn.edu:8080/erddap/tabledap/DEEP_WQ.html) and select data is available for download from the [Water Quality Portal](https://www.waterqualitydata.us/) . All
 samples are collected and analyzed under [EPA-approved Quality Assurance Project
 Plans](https://portal.ct.gov/DEEP/Water/LIS-Monitoring/LIS-Quality-Assurance-Project-Plans).
 
