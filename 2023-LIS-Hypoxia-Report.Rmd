@@ -100,7 +100,7 @@ During the summer of 2023, CT DEEP conducted seven surveys across LIS between Ma
 <!-- Plans. -->
 
 <div class = 'itable'>
-```{r, tab.cap = '<i> Summary of sampling events during the 2023 Hypoxia Season</i>'}
+```{r, tab.footer = '<i>Summary of sampling events during the 2023 Hypoxia Season. </i>'}
 
 install.packages("kbleExtra")
 
@@ -111,7 +111,7 @@ library (kableExtra)
 dt <- read_excel("data/CruiseInfoTable2023.xlsx")
 
 dt %>%
-  kbl(caption =  "2023 Long Island Sound Hypoxia Season Cruise Information", align = "c", col.names = c("Cruise", "Start Date", "End Date", "Number of Stations Sampled", "Number of Hypoxic Stations", "Hypoxic Area (mi2)", "Minimum DO", "Station Where Minimum DO Occurred")) %>%
+  kbl(caption =  "2023 Long Island Sound Hypoxia Season Cruise Information.<br> NC= Not Calculated, NA= Not Applicable", align = "c", col.names = c("Cruise", "Start Date", "End Date", "Number of Stations Sampled", "Number of Hypoxic Stations", "Hypoxic Area (sq mi)", "Minimum DO", "Station Where Minimum DO Occurred")) %>%
   kable_classic(full_width = F, html_font = "Cambria") %>%
   scroll_box(height="300px") 
   
@@ -255,7 +255,7 @@ The LISS utilizes a five-year rolling average (Figure 4) to determine progress t
 
 
 <div class = 'iplot'>
-```{r, fig.cap = '<i>This interactive graph shows the maximum area of hypoxia in square miles (blue bars), duration of hypoxic conditions in days (black circles), and the five-year rolling average area in square miles (green line). Area in square miles, Duration in days </i>'}
+```{r, fig.cap = '<i>This interactive graph shows the maximum area of hypoxia in square miles (blue bars), duration of hypoxic conditions in days (white circles), and the five-year rolling average area in square miles (green line). Area in square miles, Duration in days </i>'}
 ##install.packages("png")
 
 library(ggplot2)
@@ -270,7 +270,7 @@ MovAvg  <- read_excel("data/MovingAverage2023.xlsx")
 Avg_plot <- ggplot (data=MovAvg)+
 
   geom_col(aes(x=Year, y=Area), fill="blue")+
-  geom_point(aes (x=Year, y=Duration), color= "black")+
+  geom_point(aes (x=Year, y=Duration), color= "black", fill= "white", shape = 21, size = 3)+
   geom_line(aes(x=Year, y=FiveYearAvg),color= "green", size=2)+ 
   labs(title= "Maximum Area and Duration of Hypoxia", subtitle= "1987-2023 (June-September)")+
       theme(title= element_blank())
@@ -346,7 +346,7 @@ library (kableExtra)
 dt <- read_excel("data/OnsetDuration2023C.xlsx")
 
 dt %>%
-  kbl(caption =  "2023 Long Island Sound Onset and Duration of Hypoxia Information", align = "c", col.names = c("Year", "Estimated Start Date", "Estimated End Date", "Maximum Area (mi2)", "Duration (days)")) %>%
+  kbl(caption =  "2023 Long Island Sound Onset and Duration of Hypoxia Information", align = "c", col.names = c("Year", "Estimated Start Date", "Estimated End Date", "Duration (days)", "Maximum Area (sq mi)")) %>%
   kable_classic(full_width = F, html_font = "Cambria") %>%
   scroll_box(height="300px") 
   
@@ -389,7 +389,7 @@ dt1 <- read_excel("data/2023_hypoxAreaVol.xlsx")
 dt1 %>%
   kbl(caption =  "2023 Volume Estimates of Hypoxic Long Island Sound Bottom Waters Obtained from the UCONN HypVolApp", align = "c", col.names = c("CRUISE", "2 mg/L", "3 mg/L", "4.8 mg/L", "2 mg/L", "3 mg/L", "4.8 mg/L")) %>%
   kable_classic(full_width = F, html_font = "Cambria") %>%
-  add_header_above(c(" ", "Area (sq km)" = 3, "Volume (sq km)" = 3))
+  add_header_above(c(" ", "Area (sq km)" = 3, "Volume (cubic km)" = 3))
 
 
 ```
